@@ -1,0 +1,23 @@
+class program {
+	define turnright(){
+    	turnleft();
+        turnleft();
+        turnleft();
+        }
+    define upstairs(){
+    	turnleft();
+        move();
+        turnright();
+        move();
+     	}
+    program () {
+        // Más sencillo que girar 3 veces
+        upstairs();
+        putbeeper();
+        upstairs();
+        putbeeper();
+        upstairs();
+        putbeeper();
+        turnoff();
+    }
+}

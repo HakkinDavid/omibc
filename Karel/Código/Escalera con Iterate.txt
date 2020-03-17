@@ -1,0 +1,25 @@
+class program {
+	define turnright(){
+    	turnleft();
+        turnleft();
+        turnleft();
+        }
+    define upstairs(){
+    	turnleft();
+        move();
+        turnright();
+        move();
+     	}
+     define turnright2(){
+    	iterate(3){
+        turnleft();
+        }
+        }
+    program () {
+        // Aún más sencillo que subir 3 escalones
+        iterate(3){
+        upstairs();
+        putbeeper();
+        }
+    }
+}

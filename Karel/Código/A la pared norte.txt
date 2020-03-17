@@ -1,0 +1,18 @@
+class program {
+	define gowall(){
+    	while(frontIsClear){
+        	move();
+        }
+    }
+    define turnnorth(){
+    	while(notFacingNorth){
+        turnleft();
+        }
+    }
+    program () {
+        // A la pared norte
+        turnnorth();
+        gowall();
+        turnoff();
+    }
+}

@@ -1,0 +1,41 @@
+class program {
+	define pickallbeepers(){
+    		while(nextToABeeper){
+            	pickbeeper();
+            }
+    }
+    define turnnorth(){
+    		while(notFacingNorth){
+        		turnleft();
+        	}
+    }
+    define turnright(){
+    		iterate(3){
+        	turnleft();
+        	}
+    }
+    program () {
+        // ¡A atornillar!
+        iterate(6){
+            while(nextToABeeper){
+                    pickallbeepers();
+                    if(frontIsClear){
+                        move();
+                    }
+            }
+            if(frontIsBlocked){
+                    turnnorth();
+                      if(frontIsClear){
+                        move();
+                        if(rightIsBlocked){
+                            turnleft();
+                        }
+                        if(leftIsBlocked){
+                            turnright();
+                        }
+					}
+            }
+        }
+        turnoff();
+    }
+}

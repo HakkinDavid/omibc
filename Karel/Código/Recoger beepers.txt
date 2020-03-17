@@ -1,0 +1,51 @@
+class program {
+    program () {
+        // Recoger beepers es sencillo
+        iterate(5){
+        move();
+        pickbeeper();
+        }
+        turnleft();
+        iterate(5){
+        move();
+        pickbeeper();
+        }
+        turnleft();
+        iterate(4){
+        move();
+        pickbeeper();
+        }
+        turnleft();
+        iterate(4){
+        move();
+        pickbeeper();
+        }
+        turnleft();
+        iterate(3){
+        move();
+        pickbeeper();
+        }
+        turnleft();
+        iterate(3){
+        move();
+        pickbeeper();
+        }
+        turnleft();
+        iterate(2){
+        move();
+        pickbeeper();
+        }
+        turnleft();
+        iterate(2){
+        move();
+        pickbeeper();
+        }
+        turnleft();
+        iterate(2){
+        move();
+        pickbeeper();
+        turnleft();
+        }
+        turnoff();
+    }
+}

@@ -1,0 +1,18 @@
+class program {
+	define turnright(){
+    		iterate(3){
+        	turnleft();
+        	}
+        }
+    program () {
+        // Búsqueda Implacable
+        iterate(3){
+        move();
+        }
+        turnright();
+        iterate(4){
+        move();
+        }
+        turnoff();
+    }
+}

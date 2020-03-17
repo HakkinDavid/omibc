@@ -1,0 +1,37 @@
+class program {
+    program () {
+        // ¿Podrá Karel llegar a la cima e izar su bandera? ¡Descúbranlo a continuación!
+        move();
+        turnleft();
+        move();
+        move();
+        turnleft();
+        turnleft();
+        turnleft();
+        move();
+        turnleft();
+        move();
+        move();
+        turnleft();
+        turnleft();
+        turnleft();
+        move();
+        putbeeper();
+        move();
+        turnleft();
+        turnleft();
+        turnleft();
+        move();
+        move();
+        turnleft();
+        move();
+        turnleft();
+        turnleft();
+        turnleft();
+        move();
+        move();
+        turnleft();
+        move();
+        turnoff();
+    }
+}

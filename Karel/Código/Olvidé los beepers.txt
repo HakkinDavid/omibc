@@ -1,0 +1,32 @@
+class program {
+    program () {
+        // Karel olvidó unos beepers, ¿podrá recuperarlos?
+        move();
+        move();
+        pickbeeper();
+        turnleft();
+        turnleft();
+        turnleft();
+        move();
+        pickbeeper();
+        turnleft();
+        move();
+        pickbeeper();
+        turnleft();
+        turnleft();
+        turnleft();
+        move();
+        pickbeeper();
+        turnleft();
+        turnleft();
+        move();
+        move();
+        turnleft();
+        move();
+        move();
+        move();
+        turnleft();
+        turnleft();
+        turnoff();
+    }
+}

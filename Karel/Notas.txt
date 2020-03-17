@@ -1,0 +1,3 @@
+Notas:
+>Puedes crear secuencias de comandos con "define" dentro de class program
+>Puedes repetir X cantidad de veces una secuencia de comandos con "iterate(X){<comandos>}" dentro de program

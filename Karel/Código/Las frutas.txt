@@ -1,0 +1,29 @@
+class program {
+	define turnright(){
+    		iterate(3){
+        	turnleft();
+        	}
+        }
+    define turnback(){
+    		iterate(2){
+        	turnleft();
+        	}
+        }
+    define pickfruit(){
+    		turnright();
+            move();
+            pickbeeper();
+            turnback();
+            move();
+            turnright();
+            move();
+    }
+    program () {
+        // Cosechando
+        move();
+        while(rightIsClear){
+        pickfruit();
+        }
+        turnoff();
+    }
+}

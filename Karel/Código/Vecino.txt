@@ -1,0 +1,62 @@
+class program {
+	define turnright(){
+    		turnleft();
+	        turnleft();
+        	turnleft();
+	}
+    program () {
+        // ¡Oye, vecino!
+        iterate(2){
+        pickbeeper();
+        }
+        iterate(2){
+        move();
+        }
+        iterate(5){
+        pickbeeper();
+        }
+        iterate(3){
+        move();
+        }
+        iterate(9){
+        pickbeeper();
+        }
+        move();
+        iterate(3){
+        pickbeeper();
+        }
+        turnleft();
+        iterate(3){
+        move();
+        }
+        turnright();
+        move();
+        turnright();
+        iterate(3){
+        move();
+        }
+        iterate(19){
+        putbeeper();
+        }
+        iterate(2){
+        turnleft();
+        }
+        iterate(3){
+        move();
+        }
+        turnleft();
+        move();
+        turnleft();
+        iterate(3){
+        move();
+        }
+        turnright();
+        iterate(6){
+        move();
+        }
+        iterate(2){
+        turnleft();
+        }
+        turnoff();
+    }
+}

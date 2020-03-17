@@ -1,0 +1,17 @@
+class program {
+    program () {
+        // Hola, mi nombre es David y programaré a Karel
+        move();
+        move();
+        pickbeeper();
+        move();
+        turnleft();
+        move();
+        move();
+        putbeeper();
+        move();
+        turnoff();
+        // ¡Funciona!
+        // PD: Creo haber sido el primero de la clase en terminarlo
+    }
+}

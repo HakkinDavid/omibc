@@ -1,0 +1,28 @@
+class program {
+    program () {
+        // Sembrando B
+        while(anyBeepersInBeeperBag){
+        	if(frontIsClear){
+              if(anyBeepersInBeeperBag){
+                  iterate(10){
+                      if(anyBeepersInBeeperBag){
+                          putbeeper();
+                      }
+                  }
+              }
+            } 
+            if(frontIsBlocked){
+        		if(anyBeepersInBeeperBag){
+                    	iterate(10){
+                        	putbeeper();
+                        }
+            	}
+                turnoff();
+        	}
+            if(frontIsClear){
+        		move();
+            }
+        }
+        turnoff();
+    }
+}

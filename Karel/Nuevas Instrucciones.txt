@@ -1,0 +1,66 @@
+Estas son las nuevas instrucciones que he creado al momento
+Formato:
+class program {
+		define <nombre de la instrucción>(){
+			<instrucción existente a ejecutar>();
+		}
+	program () {
+	}
+}
+Mis instrucciones
+class program {
+    	define upstairs(){
+    		turnleft();
+        	move();
+	        turnright();
+	        move();
+     	}
+	define turnright(){
+    		iterate(3){
+        	turnleft();
+        	}
+        }
+	define turnback(){
+    		iterate(2){
+        	turnleft();
+        	}
+        }
+	define gowall(){
+    		while(frontIsClear){
+        		move();
+        	}
+    	}
+    	define turnnorth(){
+    		while(notFacingNorth){
+        		turnleft();
+        	}
+    	}
+	define walljump(){
+    		turnleft();
+    		iterate(2){
+    		move();}
+    		turnright();
+        	move();
+        	turnright();
+        	iterate(2){
+    		move();}
+        	turnleft();
+   	}
+	define pickallbeepers(){
+    		while(nextToABeeper){
+            pickbeeper();
+            	}
+	}            
+	define turneast(){
+    		while(notFacingEast){
+            turnleft();
+            }
+    	}
+	define gowallbeeper(){
+    		while(notNextToABeeper){
+        		move();
+        	}
+    	}
+	program () {
+	}
+}

@@ -1,0 +1,28 @@
+class program {
+    program () {
+        // ¿Podrá Karel subir al Dojo?
+        turnleft();
+        move();
+        turnleft();
+        turnleft();
+        turnleft();
+        move();
+        putbeeper();
+        turnleft();
+        move();
+        turnleft();
+        turnleft();
+        turnleft();
+        move();
+        putbeeper();
+        turnleft();
+        move();
+        turnleft();
+        turnleft();
+        turnleft();
+        move();
+        putbeeper();
+        
+        turnoff();
+    }
+}

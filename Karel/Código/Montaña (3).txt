@@ -1,0 +1,63 @@
+class program {
+	define turnnorth(){
+    		while(notFacingNorth){
+            turnleft();
+            }
+    	}
+	define turnwest(){
+    		while(notFacingWest){
+            turnleft();
+            }
+    	}
+    define turnsouth(){
+    		while(notFacingSouth){
+            turnleft();
+            }
+    	}
+    define turneast(){
+    		while(notFacingEast){
+            turnleft();
+            }
+    	}
+	define gowall(){
+    		while(frontIsClear){
+        		move();
+        	}
+    }
+    define turnright(){
+    		iterate(3){
+        	turnleft();
+        	}
+    }
+    define safemove(){
+    	if(frontIsBlocked){
+        	turnoff();
+        }
+        if(frontIsClear){
+        	move();
+        }
+    }
+    program () {
+        // ¿Podrá Karel llegar a la cima e izar su bandera? ¡Descúbranlo a continuación!
+        gowall();
+        while(frontIsBlocked){
+            turnleft();
+            while(rightIsBlocked){
+            safemove();
+            }
+            turnright();
+            safemove();
+        }
+        if(anyBeepersInBeeperBag){
+        	putbeeper();
+        }
+        safemove();
+        while(frontIsClear){
+        	turnright();
+            gowall();
+            turnleft();
+            safemove();
+        }
+        turnoff();
+    }
+}
